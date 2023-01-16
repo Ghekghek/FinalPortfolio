@@ -880,7 +880,14 @@ nav .container ul li a {
 }
 
 } 
+@media only screen and (max-width: 500px) {
+ 
+.actl li {
+  align-items: center;
 
+
+}
+}
 
 
 /* project css */
