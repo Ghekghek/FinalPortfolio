@@ -1,174 +1,42 @@
-/* .horizontal {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow-x: hidden;
-}
-
-.horizontal .item {
-  position: relative;
-  width: 100vw;
-  height: calc(100vh - 300px);
-  padding: 150px ;
-  display: flex;
-  
-  flex-direction: column;
- justify-content: center;
- align-items: flex-end;
- 
-  
-}
-.item-wrapper{
-  display: flex;
-  align-items: flex-start;
+#footer {
+  height: 100vh !important;
+  width: 100% !important;
 
 }
-
-.item-wrapper .item p ,h1
-{
- 
- width: 30%;
-}
- .horizontal .item p{
-  width: 500px;
-} 
-
-.horizontal .pin-wrap,
-.horizontal .animation-wrap {
-  display: flex;
-  position: relative;
-  z-index: 1;
-  height: 100vh;
-}
-
-.pin-wrap {
-  position: relative;
-}
-
-.horizontal .item:before {
-  position: absolute;
-  font-size: 100px;
-  opacity: 0.13;
-  font-weight: bold;
-  z-index: -1;
-  -webkit-transform: translate(-30px, -50px);
-  transform: translate(-30px, -50px);
-  line-height: 1;
-}
-
-.horizontal .animation-wrap.to-right {
-  counter-reset: item;
-  float: left;
-}
-
-.horizontal .animation-wrap.to-left {
-  counter-reset: item 11;
-  float: right;
-}
-
-.reveal {
-  opacity: 0;
-}
-
-
-.boy {
-  position:fixed;
-  top: 300px;
-  left: 0;
-
-width: 50vh;
-
-opacity: 0;
-z-index: 99;
-}
-
-
-
-
-
 #howidesign {
-  height: 100% !important;
+
+  height: 100%!important;
+
+
+  width: min(1440px, 90%);
   position: relative;
-  width: 100vw !important;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-#text {
-  transition: all 1s ease-in-out;
+.design-container {
+width: 100%;
+  display: flex;
+  justify-content: center;
+ flex-direction: column;
 }
-
-@media only screen and (max-width: 1200px) {
-}  */
-
-
-#howidesign{
-  width: 100vw!important;
-  height: 100vh!important;
-  position: relative;
+.item-wrapper:nth-child(even){
+  margin-left: auto;
 }
 
 
-.boy {
-  position:fixed;
-  top: 300px;
-  left: 0;
-
-width: 50vh;
+.item-wrapper{
 
 
-z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33em;
+  height: 20em;
 }
 
-.horizontal{
-  position: relative;
-  overflow: hidden;
-  width:100%;
+.dimage img{
+  width: 10em;
 }
-.main{
-  overflow-x:hidden;
-}
-.horizontal-sliders{
-  display:flex;
-  flex-wrap:no-wrap;
-  width: 500%;
-  overflow-x:hidden;
-}
-.slide{
-  height:100vh;
- width: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
 
-
-}
-.slide0{
- 
-  background: url(images/Explode\ Shape-1.png);
-  background-repeat: no-repeat;
-background-position: center left;
-  background-size: 40%;
-}
-.slide1{
-  background: url(images/Explode\ Shape-2.png);
-  background-repeat: no-repeat;
-background-position: center left;
-  background-size: 40%;
-}
-.slide2{
-  background: url(images/Explode\ Shape-3.png);
-  background-repeat: no-repeat;
-background-position: center left;
-  background-size: 40%;
-}
-.slide3{
-  background: url(images/Explode\ Shape-4.png);
-  background-repeat: no-repeat;
-background-position: center left;
-  background-size: 40%;
-}
-.slide4{
-  background: url(images/Explode\ Shape.png);
-  background-repeat: no-repeat;
-background-position: center left;
-  background-size: 40%;
-}

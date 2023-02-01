@@ -1,0 +1,177 @@
+
+
+#mywork{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.work{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+
+.work-sample{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+
+
+.work-sample .work-img img{
+    max-width: 400px;
+ 
+}
+
+.work-sample .desktop {
+    height: 100%;
+width: 100%;
+    grid-row:4;
+grid-column: 1 / -1;
+justify-content: center;
+display: grid;
+
+}
+.work-sample .desktop img {
+    max-width: 500px;
+
+}
+
+
+
+/* ghekfix */
+.ghekfix{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    width: 100%;
+    
+
+}
+.nav-container{
+    padding:1em  2em;
+    display: flex;
+width: 100%;
+justify-content: space-between;
+background-color:#1B1B1B ;
+align-items: center;
+
+}
+
+
+.logo{
+
+    width: 50%;
+}
+.navigation{
+    width: 30%;
+}
+
+
+.navigation ul{
+    
+    list-style: none;
+    display: flex;
+justify-content: space-between;
+padding: 0;
+}
+.navigation .gnavlink{
+   cursor: pointer;
+    color:#FFECD4 ;
+}
+
+.homefix{
+
+background-color: #1B1B1B;
+padding: 1em 2em;
+}
+.homefix-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+padding: 0 3em;
+min-height:600px;
+    background:
+    linear-gradient(to right, #E98A42 8px, transparent 8px) 0 0,
+    linear-gradient(to right, #E98A42 8px, transparent 8px) 0 100%,
+    linear-gradient(to left, #E98A42 8px, transparent 8px) 100% 0,
+    linear-gradient(to left, #E98A42 8px, transparent 8px) 100% 100%,
+    linear-gradient(to bottom, #E98A42 8px, transparent 8px) 0 0,
+    linear-gradient(to bottom, #E98A42 8px, transparent 8px) 100% 0,
+    linear-gradient(to top, #E98A42 8px, transparent 8px) 0 100%,
+    linear-gradient(to top, #E98A42 8px, transparent 8px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+.homefix-details{
+    color: #FFECD4;
+ 
+}
+.homefix-container .homefix-details p:first-child{
+font-size: 4rem;
+line-height:4rem;
+font-weight: bolder;
+color: #FFECD4;
+}
+.homefix-container .homefix-details p{
+    margin-top: 1em;
+
+}
+
+.homefix-details button{
+    background-color: #FFECD4;
+    padding: 1em 2em;
+    margin-top: 1em;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    font-size: 16px;
+   letter-spacing: 1px;
+   font-weight: lighter;
+   color: #1B1B1B;
+ 
+}
+
+
+
+.brand-container{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: .5em;
+
+}
+
+/* ghekfix services */
+
+
+.ghekfix-services{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+}
+
+
+.services-header h1{
+font-size: 5rem;
+}
+.services-header h5{
+font-size: 2rem;
+}
+
+.g-services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+.g-services-container .g{
+display: flex;
+align-items: center;
+gap: 1em;
+}

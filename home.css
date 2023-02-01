@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 :root {
   margin: 0;
   padding: 0;
@@ -22,8 +22,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #EBEDD8;
-  font-family: 'Josefin Sans', sans-serif;
- 
+  font-family: 'Poppins', sans-serif;
+  overflow-y: visible;
+
 }
 
 
@@ -130,6 +131,7 @@ height: 40em;
   position: relative;
   align-items: center;
   justify-content:center;
+  line-height: 1.25em;
 
 
 }
@@ -277,8 +279,8 @@ gap: .5em;
     display: flex;
     justify-content: space-between;
 
-    padding: .50em .75em;
-    
+    padding: .25em .75em;
+
  
    
 }
@@ -298,6 +300,7 @@ gap: .5em;
 
 
 .buttons{
+  z-index: 999;
   position: absolute;
   left: 0;
   bottom:0;
@@ -316,6 +319,7 @@ gap: .5em;
   height: 40px;
   border-radius: 50%;
   background-color: #EBEDD8;
+  z-index: 1000;
 
 }
 
@@ -421,6 +425,7 @@ height: 100%;
     background-color: #E15554;
 z-index: 99;
 opacity: 70%;
+z-index: -1;
 }
 
 .circles-container{
@@ -436,7 +441,7 @@ align-items: center;
     display: flex;
  
     width: 140%;
-   
+   z-index: -1;
    
   }
   
