@@ -1,4 +1,4 @@
-#footer {
+/* #footer {
   height: 100vh !important;
   width: 100% !important;
 
@@ -39,4 +39,112 @@ width: 100%;
 .dimage img{
   width: 10em;
 }
+ */
 
+
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+width: 60%;
+}
+.timeline-container .vertical-scrollable-timeline {
+  width: 600px;
+  list-style-type: none;
+  padding: 0;
+}
+.timeline-container .vertical-scrollable-timeline li {
+  position: relative;
+  padding: 35px 0px 125px 158px;
+
+}
+.timeline-container .vertical-scrollable-timeline li:last-child {
+  margin-bottom: 0;
+}
+.timeline-container .vertical-scrollable-timeline li h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #353434;
+}
+.timeline-container .vertical-scrollable-timeline li p {
+  line-height: 1.5;
+  color: #353434;
+  text-align: justify;
+}
+.timeline-container .vertical-scrollable-timeline li p:last-child {
+  margin-bottom: 0;
+}
+.timeline-container .vertical-scrollable-timeline li .icon-holder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 104px;
+  height: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c5c3cb;
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.4s all;
+}
+.timeline-container .vertical-scrollable-timeline li .icon-holder::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 4px solid #fff;
+  position: absolute;
+  background-color: #c5c3cb;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.4s all;
+}
+.timeline-container .vertical-scrollable-timeline li .icon-holder i {
+  font-size: 25px;
+  color: #fff;
+}
+.timeline-container .vertical-scrollable-timeline li::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 8px;
+  background-color: #e803fc;
+  left: 48px;
+  top: 34px;
+  z-index: 0;
+  transition: 0.4s all;
+}
+.timeline-container .vertical-scrollable-timeline li::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  background-color: #c5c3cb;
+  left: 48px;
+  z-index: 0;
+}
+.timeline-container .vertical-scrollable-timeline li:last-child::before {
+  content: unset;
+}
+.timeline-container .vertical-scrollable-timeline li.active .icon-holder {
+  background-color: #e803fc;
+}
+.timeline-container .vertical-scrollable-timeline li.active .icon-holder::before {
+  background-color: #e803fc;
+}
+.timeline-container .vertical-scrollable-timeline li.active::after {
+  height: 100%;
+}
+.timeline-container .vertical-scrollable-timeline li.active:last-child::after {
+  content: unset;
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline-container {
+    width: 100%;
+  }
+
+  
+  
+  }
